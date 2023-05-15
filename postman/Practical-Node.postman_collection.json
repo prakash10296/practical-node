@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "ae400930-23e5-4781-9c8b-40ca974e18f5",
+		"name": "Practical-Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "product add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "product-2",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "colour",
+									"value": "red",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/test/download (1).png",
+										"/C:/test/JPG_Test.jpg"
+									]
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products/",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"product-11\",\r\n    \"size\": \"11\",\r\n    \"colour\": \"red1\",\r\n    \"price\": \"101\",\r\n    \"quantity\": \"11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products/6460e3e5448dcef43170546f",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products",
+								"6460e3e5448dcef43170546f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products/6460e896426befc0105715a0",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products",
+								"6460e896426befc0105715a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product delete all",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products?name=&page=1&size=5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product get single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/products/6460e3e5448dcef43170546f",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"products",
+								"6460e3e5448dcef43170546f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "order add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\": [\r\n        {\r\n            \"productId\": \"6460e92e6417bb6f7dbc58d0\",\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"productId\": \"6460e9466417bb6f7dbc58d4\",\r\n            \"count\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"prod1111\",\r\n    \"size\": \"10\",\r\n    \"image\": \"img\",\r\n    \"colour\": \"red\",\r\n    \"price\": \"10\",\r\n    \"quantity\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders/6406bc263f527d1eb4dffe9e",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders",
+								"6406bc263f527d1eb4dffe9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders/6406bc263f527d1eb4dffe9e",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders",
+								"6406bc263f527d1eb4dffe9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order delete all",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders?name=&page=1&size=5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order get single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders/64611bd9fd2422a65c2ce40d",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders",
+								"64611bd9fd2422a65c2ce40d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user3\",\r\n    \"mobile\": \"7897897893\",\r\n    \"password\": \"123456\",\r\n    \"roles\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user3\",\r\n    \"mobile\": \"7897897893\",\r\n    \"password\": \"123456\",\r\n    \"roles\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users/6461a1e4b36366c1b796fb38",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users",
+								"6461a1e4b36366c1b796fb38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users/6461a27f4cd2ac0bcd40ea9b",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users",
+								"6461a27f4cd2ac0bcd40ea9b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user delete all",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users?name=&page=1&size=5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user get single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/users/6461a1e4b36366c1b796fb38",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"users",
+								"6461a1e4b36366c1b796fb38"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "order report get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/orders/report?name=&page=1&size=5&userId=6460dc90ed25387819c49b2e&fromDate=2023-05-15&toDate=2023-05-15",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"orders",
+								"report"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "userId",
+									"value": "6460dc90ed25387819c49b2e"
+								},
+								{
+									"key": "fromDate",
+									"value": "2023-05-15"
+								},
+								{
+									"key": "toDate",
+									"value": "2023-05-15"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user2\",\r\n    \"mobile\": \"7897897892\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/auth/signup",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"token\", \"Bearer \"+jsonData.accessToken);\r",
+							"postman.setEnvironmentVariable(\"refreshToken\", jsonData.refreshToken);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"7897897890\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/auth/signin",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refreshtoken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"token\", \"Bearer \"+jsonData.accessToken);\r",
+							"postman.setEnvironmentVariable(\"refreshToken\", jsonData.refreshToken);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\": \"{{refreshToken}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/auth/refreshtoken",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"auth",
+						"refreshtoken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

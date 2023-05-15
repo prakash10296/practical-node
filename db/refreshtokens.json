@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "64611bbefd2422a65c2ce406"
+  },
+  "token": "07367b74-ae68-4346-94c4-542ce0418954",
+  "user": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-15T17:34:54.217Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646192ef455229cd18d4014d"
+  },
+  "token": "cb25b4e4-8204-4905-8b9d-89682e8069a0",
+  "user": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T02:03:27.812Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64619415a78662f3f715bb87"
+  },
+  "token": "e7eb8b3f-c649-40d8-8188-648c97d73b44",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T02:08:21.550Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64619427a78662f3f715bb8e"
+  },
+  "token": "3f399129-c7fc-4ff6-ab2d-e5e7c32cd245",
+  "user": {
+    "$oid": "64611b713923ff1db3700269"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T02:08:39.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461959ed6d40c7672e138e1"
+  },
+  "token": "da400d4f-a5ee-4558-89b6-27a6d9c3c3e2",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T02:14:54.305Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646195a8d6d40c7672e138e8"
+  },
+  "token": "abc3d2e0-7dcb-44b1-b65f-3cbea45d7dc3",
+  "user": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T02:15:04.549Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461964606c29178f77baf17"
+  },
+  "token": "72572d87-e472-4998-a788-745a937b073f",
+  "user": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T02:17:42.920Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64619c0d59b8120853bd913e"
+  },
+  "token": "6bb21f26-8015-4eee-a331-8c9ab5817b83",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T02:42:21.065Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461a1b3b36366c1b796fb2e"
+  },
+  "token": "03f881fb-8c1f-4d64-be06-742dc2036b59",
+  "user": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T03:06:27.944Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461a1bcb36366c1b796fb34"
+  },
+  "token": "7381ff28-57aa-410b-9485-29ecb6f76a22",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T03:06:36.326Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461a2db4cd2ac0bcd40eaa7"
+  },
+  "token": "25153afd-5518-418d-bcad-f15184b606b6",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T03:11:23.059Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461a4d732455b2c2ec90d9f"
+  },
+  "token": "8e515910-f80c-49a9-9312-803e83fe3f60",
+  "user": {
+    "$oid": "64611b713923ff1db3700269"
+  },
+  "role": "user",
+  "expiryDate": {
+    "$date": "2023-05-16T03:19:51.179Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6461a4e632455b2c2ec90dae"
+  },
+  "token": "4b616f29-94b9-430a-98e8-6d8dbc857310",
+  "user": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "role": "admin",
+  "expiryDate": {
+    "$date": "2023-05-16T03:20:06.720Z"
+  },
+  "__v": 0
+}]

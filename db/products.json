@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "6460e92e6417bb6f7dbc58d0"
+    },
+    "name": "product-1",
+    "size": "1",
+    "images": [],
+    "colour": "red",
+    "price": "10",
+    "quantity": "1",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6460e9466417bb6f7dbc58d4"
+    },
+    "name": "product-2",
+    "size": "2",
+    "images": [],
+    "colour": "red",
+    "price": "20",
+    "quantity": "2",
+    "__v": 0
+  }
+]

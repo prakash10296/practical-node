@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6460d5da1bbd0ae557a69e50"
+  },
+  "username": "admin",
+  "mobile": "7897897890",
+  "password": "$2a$08$9u1uzWDCx/b9BaBtR6ZNjurORAbCcZvPckn2L.zYi7wyukQMd1Gmm",
+  "roles": [
+    {
+      "$oid": "6460d5da1bbd0ae557a69e4b"
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "6460dc90ed25387819c49b2e"
+  },
+  "username": "user1",
+  "mobile": "7897897891",
+  "password": "$2a$08$JYj/88Z0Q6e1MRGshu7XrO24mZMnYNdpqNcoGGEjWDTpig7I4MKQ.",
+  "roles": [
+    {
+      "$oid": "6460d5da1bbd0ae557a69e4d"
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "64611b713923ff1db3700269"
+  },
+  "username": "user2-2",
+  "mobile": "78978978922",
+  "password": "$2a$08$GRwH/2BpUHW5zIysLT119elH/jh6HLmhE7fONTEgl6N3sUHiZrqpK",
+  "roles": [
+    {
+      "$oid": "6460d5da1bbd0ae557a69e4d"
+    }
+  ],
+  "__v": 1
+}]
